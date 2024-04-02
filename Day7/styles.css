@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  --padding: 10px;
+  --blur: 4px;
+  --base: rgb(255,0, 0);
+  --width: 60%;
+  --border-radius: 5px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.css {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: var(--width);
+  display: block;
+  height: 80%;
+  margin-top: 1rem;
+  padding: var(--padding);
+  filter: blur(var(--blur));
+  background-color: var(--base);
+  border-radius: var(--border-radius);
+}
+
+label {
+  padding-left: 1rem;
+  font-size: 1rem;;
+}
+
+input {
+  margin-right: 20px;
+}
